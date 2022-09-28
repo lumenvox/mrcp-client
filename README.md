@@ -28,6 +28,12 @@ Or, using a single command:
 curl -Lp https://github.com/lumenvox/mrcp-client/releases/download/v3.4.0/simple_mrcp_client-3.4.0.tar.gz | sudo tar -xvzf - -C /usr/local/bin/ && sudo chmod +x /usr/local/bin/simple_mrcp_client
 ```
 
+> Note that the application is designed to run on 64-bit Linux systems only,
+> and has been tested on CentOS7, CentOS8, RockyLinux8, Ubuntu 20.04 LTS.
+> Other operating systems should also work (such as RHEL variants) as there
+> are minimal dependencies. Openssl is required for the optional encryption
+> of traffic
+
 ## Running the Application
 
 There are many optional parameters available for the test application. To see
