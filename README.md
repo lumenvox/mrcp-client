@@ -17,7 +17,7 @@ To install the application, you must download and extract the binary, installing
 it into your `/usr/local/bin/` folder as shown here:
 
 ```shell
-curl -L https://github.com/lumenvox/mrcp-client/releases/download/v3.4.0/simple_mrcp_client-3.4.0.tar.gz -o simple_mrcp_client.tar.gz
+curl -L https://github.com/lumenvox/mrcp-client/releases/download/v4.1.2/simple_mrcp_client-4.1.2.tar.gz -o simple_mrcp_client.tar.gz
 sudo tar -xvzf simple_mrcp_client.tar.gz -C /usr/local/bin/
 sudo chmod +x /usr/local/bin/simple_mrcp_client
 ```
@@ -25,7 +25,7 @@ sudo chmod +x /usr/local/bin/simple_mrcp_client
 Or, using a single command:
 
 ```shell
-curl -Lp https://github.com/lumenvox/mrcp-client/releases/download/v3.4.0/simple_mrcp_client-3.4.0.tar.gz | sudo tar -xvzf - -C /usr/local/bin/ && sudo chmod +x /usr/local/bin/simple_mrcp_client
+curl -Lp https://github.com/lumenvox/mrcp-client/releases/download/v4.1.2/simple_mrcp_client-4.1.2.tar.gz | sudo tar -xvzf - -C /usr/local/bin/ && sudo chmod +x /usr/local/bin/simple_mrcp_client
 ```
 
 > Note that the application is designed to run on 64-bit Linux systems only,
