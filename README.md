@@ -51,6 +51,44 @@ examples
 > and you will need to specify the target (mrcp-api) machine's IP address
 > as well as the local machine's IP address (where the utility resides) so
 > that full connectivity can be established.
+
+## Running With Docker
+
+If you would like to run the application with a container as opposed to
+downloading the binary directly, you can use the `docker-compose.yaml`
+found at the root of this project. Assuming you have Docker installed, you
+can start the container from the root of this project with the following
+command:
+```shell
+docker-compose up -d
+```
+This will start a container, `simple_mrcp_client`, which contains the
+binary for the application. To enter the container, use the following
+command:
+```shell
+docker exec -it simple_mrcp_client bash
+```
+This will open up a Bash shell from which you can run the application. The
+application is already on the PATH, so you can run it with the following
+command:
+```shell
+simple_mrcp_client
+```
+Running without any options will bring up a description of how to use the
+application.
+
+### Mapped folders
+The docker-compose.yaml configures several folders to be mounted into the
+container. To use these folders, you must first create them at the root of
+the project. The following folders are mapped by default:
+* `./grammars`
+* `./ssml`
+* `./audio`
+
+Once the folders have been created, you can start the container. The
+folders are mounted to the root folder inside the container (`/`). The
+mounts are dynamic, so adding files to those folders in the container will
+also add them to your local disk, and vice versa.
  
 ## Connecting to your MRCP Server
 

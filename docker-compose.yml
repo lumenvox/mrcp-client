@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+
+  simple_mrcp_client:
+    image: lumenvox/simple_mrcp_client
+    network_mode: host
+    container_name: simple_mrcp_client
+    restart: "no"
+
+    volumes:
+      # Map local grammars folder to the /grammars folder inside container
+      - "./grammars:/grammars"
+
+      # Map local SSML folder to the /ssml folder inside container
+      - "./ssml:/ssml"
+
+      # Map local audio folder to the /audio folder inside container
+      - "./audio:/audio"
+
+    command: "tail -f /dev/null"
