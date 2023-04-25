@@ -77,6 +77,12 @@ simple_mrcp_client
 Running without any options will bring up a description of how to use the
 application.
 
+When you are done with the container, you can bring it down with the
+following command, run from the root of this project:
+```shell
+docker-compose down
+```
+
 ### Mapped folders
 The docker-compose.yaml configures several folders to be mounted into the
 container. To use these folders, you must first create them at the root of
