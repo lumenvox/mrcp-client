@@ -60,11 +60,11 @@ found at the root of this project. Assuming you have Docker installed, you
 can start the container from the root of this project with the following
 command:
 ```shell
-docker-compose up -d
+CURRENT_UID=$(id -u) CURRENT_GID=$(id -g) docker-compose up -d
 ```
 This will start a container, `simple_mrcp_client`, which contains the
-binary for the application. To enter the container, use the following
-command:
+binary for the application using same user ID and group ID as your user.
+To enter the container, use the following command:
 ```shell
 docker exec -it simple_mrcp_client bash
 ```
