@@ -63,7 +63,7 @@ command:
 CURRENT_UID=$(id -u) CURRENT_GID=$(id -g) docker-compose up -d
 ```
 This will start a container, `simple_mrcp_client`, which contains the
-binary for the application using same user ID and group ID as your user.
+binary for the application using the same user ID and group ID as your user.
 To enter the container, use the following command:
 ```shell
 docker exec -it simple_mrcp_client bash
